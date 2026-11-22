@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		ABE493F430B2CFCC00A95762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABE493DE30B2CFC900A95762 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABE493E530B2CFC900A95762;
+			remoteInfo = Commuter;
+		};
+		ABE493FE30B2CFCC00A95762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABE493DE30B2CFC900A95762 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABE493E530B2CFC900A95762;
+			remoteInfo = Commuter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABE493E630B2CFC900A95762 /* Commuter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commuter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE493F330B2CFCC00A95762 /* CommuterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommuterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE493FD30B2CFCC00A95762 /* CommuterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommuterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ABE493E830B2CFC900A95762 /* Commuter */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Commuter;
+			sourceTree = "<group>";
+		};
+		ABE493F630B2CFCC00A95762 /* CommuterTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CommuterTests;
+			sourceTree = "<group>";
+		};
+		ABE4940030B2CFCC00A95762 /* CommuterUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CommuterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABE493E330B2CFC900A95762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		ABE493F030B2CFCC00A95762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		ABE493FA30B2CFCC00A95762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABE493DD30B2CFC900A95762 = {
+			isa = PBXGroup;
+			children = (
+				ABE493E830B2CFC900A95762 /* Commuter */,
+				ABE493F630B2CFCC00A95762 /* CommuterTests */,
+				ABE4940030B2CFCC00A95762 /* CommuterUITests */,
+				ABE493E730B2CFC900A95762 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABE493E730B2CFC900A95762 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABE493E630B2CFC900A95762 /* Commuter.app */,
+				ABE493F330B2CFCC00A95762 /* CommuterTests.xctest */,
+				ABE493FD30B2CFCC00A95762 /* CommuterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABE493E530B2CFC900A95762 /* Commuter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE4940530B2CFCC00A95762 /* Build configuration list for PBXNativeTarget "Commuter" */;
+			buildPhases = (
+				ABE493E230B2CFC900A95762 /* Sources */,
+				ABE493E330B2CFC900A95762 /* Frameworks */,
+				ABE493E430B2CFC900A95762 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				ABE493E830B2CFC900A95762 /* Commuter */,
+			);
+			name = Commuter;
+			productName = Commuter;
+			productReference = ABE493E630B2CFC900A95762 /* Commuter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABE493F230B2CFCC00A95762 /* CommuterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE4940830B2CFCC00A95762 /* Build configuration list for PBXNativeTarget "CommuterTests" */;
+			buildPhases = (
+				ABE493EF30B2CFCC00A95762 /* Sources */,
+				ABE493F030B2CFCC00A95762 /* Frameworks */,
+				ABE493F130B2CFCC00A95762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABE493F530B2CFCC00A95762 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ABE493F630B2CFCC00A95762 /* CommuterTests */,
+			);
+			name = CommuterTests;
+			productName = CommuterTests;
+			productReference = ABE493F330B2CFCC00A95762 /* CommuterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ABE493FC30B2CFCC00A95762 /* CommuterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE4940B30B2CFCC00A95762 /* Build configuration list for PBXNativeTarget "CommuterUITests" */;
+			buildPhases = (
+				ABE493F930B2CFCC00A95762 /* Sources */,
+				ABE493FA30B2CFCC00A95762 /* Frameworks */,
+				ABE493FB30B2CFCC00A95762 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABE493FF30B2CFCC00A95762 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ABE4940030B2CFCC00A95762 /* CommuterUITests */,
+			);
+			name = CommuterUITests;
+			productName = CommuterUITests;
+			productReference = ABE493FD30B2CFCC00A95762 /* CommuterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABE493DE30B2CFC900A95762 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					ABE493E530B2CFC900A95762 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					ABE493F230B2CFCC00A95762 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = ABE493E530B2CFC900A95762;
+					};
+					ABE493FC30B2CFCC00A95762 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = ABE493E530B2CFC900A95762;
+					};
+				};
+			};
+			buildConfigurationList = ABE493E130B2CFC900A95762 /* Build configuration list for PBXProject "Commuter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABE493DD30B2CFC900A95762;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ABE493E730B2CFC900A95762 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABE493E530B2CFC900A95762 /* Commuter */,
+				ABE493F230B2CFCC00A95762 /* CommuterTests */,
+				ABE493FC30B2CFCC00A95762 /* CommuterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABE493E430B2CFC900A95762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		ABE493F130B2CFCC00A95762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		ABE493FB30B2CFCC00A95762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABE493E230B2CFC900A95762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		ABE493EF30B2CFCC00A95762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		ABE493F930B2CFCC00A95762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABE493F530B2CFCC00A95762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABE493E530B2CFC900A95762 /* Commuter */;
+			targetProxy = ABE493F430B2CFCC00A95762 /* PBXContainerItemProxy */;
+		};
+		ABE493FF30B2CFCC00A95762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABE493E530B2CFC900A95762 /* Commuter */;
+			targetProxy = ABE493FE30B2CFCC00A95762 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ABE4940330B2CFCC00A95762 /* Debug configuration for PBXProject "Commuter" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XX2AV975ZC;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABE4940430B2CFCC00A95762 /* Release configuration for PBXProject "Commuter" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XX2AV975ZC;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABE4940630B2CFCC00A95762 /* Debug configuration for PBXNativeTarget "Commuter" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XX2AV975ZC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.102do.Commuter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABE4940730B2CFCC00A95762 /* Release configuration for PBXNativeTarget "Commuter" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XX2AV975ZC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.102do.Commuter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ABE4940930B2CFCC00A95762 /* Debug configuration for PBXNativeTarget "CommuterTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XX2AV975ZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.102do.CommuterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Commuter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Commuter";
+			};
+			name = Debug;
+		};
+		ABE4940A30B2CFCC00A95762 /* Release configuration for PBXNativeTarget "CommuterTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XX2AV975ZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.102do.CommuterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Commuter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Commuter";
+			};
+			name = Release;
+		};
+		ABE4940C30B2CFCC00A95762 /* Debug configuration for PBXNativeTarget "CommuterUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XX2AV975ZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.102do.CommuterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Commuter;
+			};
+			name = Debug;
+		};
+		ABE4940D30B2CFCC00A95762 /* Release configuration for PBXNativeTarget "CommuterUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XX2AV975ZC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.102do.CommuterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Commuter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABE493E130B2CFC900A95762 /* Build configuration list for PBXProject "Commuter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE4940330B2CFCC00A95762 /* Debug configuration for PBXProject "Commuter" */,
+				ABE4940430B2CFCC00A95762 /* Release configuration for PBXProject "Commuter" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		ABE4940530B2CFCC00A95762 /* Build configuration list for PBXNativeTarget "Commuter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE4940630B2CFCC00A95762 /* Debug configuration for PBXNativeTarget "Commuter" */,
+				ABE4940730B2CFCC00A95762 /* Release configuration for PBXNativeTarget "Commuter" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		ABE4940830B2CFCC00A95762 /* Build configuration list for PBXNativeTarget "CommuterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE4940930B2CFCC00A95762 /* Debug configuration for PBXNativeTarget "CommuterTests" */,
+				ABE4940A30B2CFCC00A95762 /* Release configuration for PBXNativeTarget "CommuterTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		ABE4940B30B2CFCC00A95762 /* Build configuration list for PBXNativeTarget "CommuterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE4940C30B2CFCC00A95762 /* Debug configuration for PBXNativeTarget "CommuterUITests" */,
+				ABE4940D30B2CFCC00A95762 /* Release configuration for PBXNativeTarget "CommuterUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABE493DE30B2CFC900A95762 /* Project object */;
+	validationLevel = 1;
+}
