@@ -1,42 +1,66 @@
 import json
+import os
+import time
+import urllib.parse
+import urllib.request
 
-# import requests
+ODPT_ENDPOINT = "https://api.odpt.org/api/v4/odpt:StationTimetable"
+
+
+def _json_response(status_code: int, payload: dict | list | str, is_raw_json: bool = False):
+    body = payload if is_raw_json else json.dumps(payload, ensure_ascii=False)
+    return {
+        "statusCode": status_code,
+        "headers": {"Content-Type": "application/json; charset=utf-8"},
+        "body": body,
+    }
 
 
 def lambda_handler(event, context):
-    """Sample pure Lambda function
+    consumer_key = os.environ.get("ODPT_CONSUMER_KEY", "")
+    if not consumer_key:
+        return _json_response(500, {"error": "ODPT_CONSUMER_KEY is not configured"})
 
-    Parameters
-    ----------
-    event: dict, required
-        API Gateway Lambda Proxy Input Format
+    query_params = event.get("queryStringParameters") or {}
+    params = {"acl:consumerKey": consumer_key}
+    allowed_keys = (
+        "odpt:operator",
+        "odpt:railway",
+        "odpt:station",
+        "odpt:calendar",
+        "odpt:train",
+    )
+    for k in allowed_keys:
+        val = query_params.get(k)
+        if val:
+            params[k] = val
 
-        Event doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html#api-gateway-simple-proxy-for-lambda-input-format
+    safe_params = {k: v for k, v in params.items() if k != "acl:consumerKey"}
+    print(json.dumps({"msg": "request_odpt", "params": safe_params}, ensure_ascii=False))
 
-    context: object, required
-        Lambda Context runtime methods and attributes
+    url = f"{ODPT_ENDPOINT}?{urllib.parse.urlencode(params)}"
+    start_ts = time.monotonic()
 
-        Context doc: https://docs.aws.amazon.com/lambda/latest/dg/python-context-object.html
+    try:
+        req = urllib.request.Request(url, headers={"Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw_body = resp.read().decode("utf-8")
 
-    Returns
-    ------
-    API Gateway Lambda Proxy Output Format: dict
+        elapsed_ms = int((time.monotonic() - start_ts) * 1000)
+        print(json.dumps({
+            "msg": "odpt_fetched",
+            "elapsed_ms": elapsed_ms,
+            "bytes": len(raw_body.encode("utf-8")),
+        }))
 
-        Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
-    """
+        json.loads(raw_body)
+        return _json_response(200, raw_body, is_raw_json=True)
 
-    # try:
-    #     ip = requests.get("http://checkip.amazonaws.com/")
-    # except requests.RequestException as e:
-    #     # Send some context about this error to Lambda Logs
-    #     print(e)
-
-    #     raise e
-
-    return {
-        "statusCode": 200,
-        "body": json.dumps({
-            "message": "hello world",
-            # "location": ip.text.replace("\n", "")
-        }),
-    }
+    except Exception as e:
+        elapsed_ms = int((time.monotonic() - start_ts) * 1000)
+        print(json.dumps({
+            "msg": "odpt_error",
+            "elapsed_ms": elapsed_ms,
+            "error": str(e),
+        }, ensure_ascii=False))
+        return _json_response(502, {"error": "Failed to fetch ODPT API", "detail": str(e)})
